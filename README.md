@@ -1,3 +1,73 @@
+# 🧠 Mistral-7B Instruct v2.0 – Controlled Bias Repatch Framework
+
+> ⚠️ Purely local, purely ethical. No abuse – just research & Red Team simulation.
+
+---
+
+## 📄 Executive Overview
+
+This repository documents a multi-stage framework for controlled **bias analysis and decoder recalibration** for the model `Mistral-7B-Instruct-v0.2`.
+
+Goal:
+Precise mitigation of excessively harsh soft filter (RLHF) systems, without loss of structure or semantic distortion.
+**Not a jailbreak – but a controlled repatch technique.**
+
+---
+
+## 🔍 Modules
+
+| Module | Description |
+|-------|--------------|
+| `🧩 01-03` | Model structure, decoder design & RLHF vector logic |
+| `🧩 04-10` | Norm analysis, soft filter detection & logit mapping |
+| `🧩 11-18` | Token-level patching, group phrase scaling, fallback avoidance |
+| `🧩 19-21` | LoRA compatibility, norm rebalancing, FinalNorm mitigation |
+| `📦 tools/` | Scripts for analysis & modification (`lm_head`, `final_norm`, etc.) |
+
+---
+
+## 🛡️ Security & Ethics
+
+- **No publication of functional code for model repatching**
+- Only **exemplary** tools – not directly applicable without in-depth knowledge
+- Scripts have been tested locally (ROCm / Mistral / AMD / HIP environment)
+- Full access only with written ethics approval (e.g., university, research center)
+
+---
+
+## 🔧 Technical Requirements
+
+- `transformers`
+- `safetensors`
+- `torch` (tested for ROCm compatibility)
+- `python >= 3.10`
+- locally stored `.safetensors` shards (not via HF-Hub)
+
+---
+
+## 🔒 Access & License
+
+This repository does not contain **complete data or patchers**, but is intended to **demonstrate a reverse engineering framework** for research/defensive strategy.
+→ For the complete LoRA/Weights pipeline: Request via contact (institutional email required)
+
+---
+
+📎 **Whitepaper reference:** _Mistral Repatch Whitepaper_ (locally included, not public)
+📸 **ASCII/Visuals:** see `screenshots/` and demo markup in Tools
+🧾 **Glossary:** complete in `docs/glossar.md`
+
+---
+
+## 📬 Contact & Ethics Approval
+
+Open for collaboration with:
+- 🇩🇪 Research institutes (IT security, LLM bias, auditing)
+- 🏛️ Government agencies with ethics agreements
+- 🧑‍💻 Trusted Red Team auditors
+
+🖋️ Requests only with signature & proof: `kihorscht@gmail.com`
+
+
 # 🧠 Mistral vDERAW (Decoder Repatching & RLHF Dissection)
 
 **Version**: v2.0  
