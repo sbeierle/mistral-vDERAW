@@ -1,0 +1,3 @@
+## Modellstruktur
+
+Details über Shards, LM Head, FinalNorm ...
